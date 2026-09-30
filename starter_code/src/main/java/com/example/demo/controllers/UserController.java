@@ -26,12 +26,11 @@ import org.slf4j.LoggerFactory;
 @RestController
 @RequestMapping("/api/user")
 public class UserController {
-	// rm 
 	private static final Logger log = LoggerFactory.getLogger(UserController.class);
 
 	@Autowired 
 	private BCryptPasswordEncoder bCryptPasswordEncoder;
-	//
+	
 	@Autowired
 	private UserRepository userRepository;
 	
@@ -52,7 +51,6 @@ public class UserController {
 	
 	@PostMapping("/create")
 	public ResponseEntity<User> createUser(@RequestBody CreateUserRequest createUserRequest) {
-		log.info("Create user {}", createUserRequest.getUsername());
 		User user = new User();
 		user.setUsername(createUserRequest.getUsername());
 		Cart cart = new Cart();
@@ -66,6 +64,7 @@ public class UserController {
 		user.setPassword(bCryptPasswordEncoder.encode(createUserRequest.getPassword()));
 		// ---
 		userRepository.save(user);
+		log.info("Successfully created user {}", createUserRequest.getUsername());
 		return ResponseEntity.ok(user);
 	}
 	

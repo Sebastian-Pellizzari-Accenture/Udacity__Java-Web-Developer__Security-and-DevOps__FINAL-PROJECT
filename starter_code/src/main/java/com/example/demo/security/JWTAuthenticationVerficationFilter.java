@@ -8,6 +8,8 @@ import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.context.SecurityContextHolder;
@@ -15,12 +17,13 @@ import org.springframework.security.web.authentication.www.BasicAuthenticationFi
 import org.springframework.stereotype.Component;
 
 import com.auth0.jwt.JWT;
+import com.example.demo.controllers.UserController;
 
 import static com.auth0.jwt.algorithms.Algorithm.HMAC512;
 
 @Component
 public class JWTAuthenticationVerficationFilter extends BasicAuthenticationFilter {
-	
+
 	public JWTAuthenticationVerficationFilter(AuthenticationManager authManager) {
         super(authManager);
     }
