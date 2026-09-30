@@ -4,6 +4,13 @@ In this project, you'll have an opportunity to demonstrate the security and DevO
 
 ## Results
 ### Metrics, Dashboards and Alerts
+#### Logging
+Can be found in the respective java files
+
+#### The code sets up at least one alert (of your choice)
+![](images/alert.png)
+
+#### Screenshots are provided showing some query results
 TODO
 
 ### CI/CD
