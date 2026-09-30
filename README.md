@@ -8,7 +8,11 @@ In this project, you'll have an opportunity to demonstrate the security and DevO
 Can be found in the respective java files
 
 #### The code sets up at least one alert (of your choice)
-![](images/alert.png)
+![](images/alert_step1.png)
+![](images/alert_step2.png)
+![](images/alert_step3.png)
+![](images/alert_step4.png)
+NOTE: As Accenture does not let me stream data from the device (blocked in Splunk!) I was only able to upload single logging files and analyse them after they were uploaded. THUS, the alerts were never triggered!
 
 #### Screenshots are provided showing some query results
 TODO
