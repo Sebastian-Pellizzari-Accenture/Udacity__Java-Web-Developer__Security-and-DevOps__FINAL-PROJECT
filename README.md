@@ -7,7 +7,7 @@ In this project, you'll have an opportunity to demonstrate the security and DevO
 TODO
 
 ### CI/CD
-
+![](images/cicd.png)
 The log-file which demonstrates the successful build was uploaded here with the name: Build3-LOG.txt
 
 ## Project Template
