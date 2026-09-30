@@ -15,7 +15,7 @@ Can be found in the respective java files
 NOTE: As Accenture does not let me stream data from the device (blocked in Splunk!) I was only able to upload single logging files and analyse them after they were uploaded. THUS, the alerts were never triggered!
 
 #### Screenshots are provided showing some query results
-TODO
+![](images/query_result.png)
 
 ### CI/CD
 ![](images/cicd.png)
